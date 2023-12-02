@@ -1,0 +1,7 @@
+# PNPM
+pnpm-lock.yaml
+node_modules
+
+# Next
+next-env.d.ts
+.next

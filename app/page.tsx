@@ -1,3 +1,3 @@
 export default function Page() {
-  return <div className="flex justify-center"></div>;
+  return <div className="flex justify-center"></div>
 }
