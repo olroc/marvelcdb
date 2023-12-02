@@ -1,0 +1,139 @@
+[
+  {
+    "id": "75",
+    "name": "Black Widow",
+    "subName": "Natasha Romanoff",
+    "pack": "Boîte de base",
+    "class": "Protection",
+    "type": "Allié",
+    "unique": true,
+    "cost": 3,
+    "resources": ["physical"],
+    "thwart": {
+      "value": 2,
+      "consequentialDamages": 1
+    },
+    "atk": {
+      "value": 1,
+      "consequentialDamages": 1
+    },
+    "hitPoints": 2,
+    "traits": ["S.H.I.E.L.D", "Espion"],
+    "ability": [
+      "**Interruption** : quand une carte est révélée du deck Rencontre, inclinez Black Widow et dépensez une ressource {mental} → annulez les effets de cette carte et défaussez-la. Ensuite, révélez une autre carte du deck Rencontre."
+    ],
+    "occurences": 1
+  },
+  {
+    "id": "76",
+    "name": "Luke Cage",
+    "pack": "Boîte de base",
+    "class": "Protection",
+    "type": "Allié",
+    "unique": true,
+    "cost": 4,
+    "resources": ["energy"],
+    "thwart": {
+      "value": 1,
+      "consequentialDamages": 1
+    },
+    "atk": {
+      "value": 2,
+      "consequentialDamages": 1
+    },
+    "hitPoints": 5,
+    "traits": ["Defender"],
+    "ability": [
+      "Ténacité. (Ce personnage entre en jeu avec une carte d'état Tenace.)"
+    ],
+    "flavorText": "Power Man à louer — Cage à l'appareil.",
+    "occurences": 1
+  },
+  {
+    "id": "77",
+    "name": "Contre-Attaque au Poing",
+    "pack": "Boîte de base",
+    "class": "Protection",
+    "type": "Événement",
+    "cost": 0,
+    "traits": ["Attaque"],
+    "resources": ["physical"],
+    "ability": [
+      "**Réponse** (attaque) : après que votre héros a défendu contre une attaque ennemie, infligez à cet ennemi des dégâts égaux à l'ATQ de votre héros."
+    ],
+    "occurences": 3
+  },
+  {
+    "id": "78",
+    "name": "Restez Derrière Moi!",
+    "pack": "Boîte de base",
+    "class": "Protection",
+    "type": "Événement",
+    "cost": 1,
+    "resources": ["mental"],
+    "ability": [
+      "**Interruption de héros** : quand une carte Traîtrise est révélée du deck Rencontre, annulez ses effets \"**Une fois révélée**\". Le méchant vous attaque à la place."
+    ],
+    "flavorText": "\"Euh ! Restez derrière moi, citoyens !\" — Miss Marvel",
+    "occurences": 3
+  },
+  {
+    "id": "79",
+    "name": "Le pouvoir de la Protection",
+    "pack": "Boîte de base",
+    "class": "Protection",
+    "type": "Ressource",
+    "resources": ["wild"],
+    "ability": [
+      "2 max par deck.",
+      "Doublez le nombre de ressources générées par cette carte lorsque vous payez une carte Protection (verte)."
+    ],
+    "occurences": 2
+  },
+  {
+    "id": "80",
+    "name": "Équipe Médicale",
+    "pack": "Boîte de base",
+    "class": "Protection",
+    "type": "Soutien",
+    "cost": 3,
+    "resources": ["energy"],
+    "ability": [
+      "Utilisations (3 jetons Soin). (Entre en jeu avec 3 jetons. Quand il n'y en a plus, défaussez cette carte.)",
+      "**Action** : retirez 1 jeton Soin de l'Équipe Médicale et inclinez-là → soignez 2 dégâts d'un personnage ami."
+    ],
+    "occurences": 3
+  },
+  {
+    "id": "81",
+    "name": "Veste Blindée",
+    "pack": "Boîte de base",
+    "class": "Protection",
+    "type": "Amélioration",
+    "cost": 1,
+    "resources": ["mental"],
+    "traits": ["Armure"],
+    "ability": [
+      "Jouez cette carte sous le contrôle de n'importe quel joueur.",
+      "1 max par joueur.",
+      "Votre héros gagne +1 DEF."
+    ],
+    "flavorText": "Vous sauve la vie tout en étant élégante.",
+    "occurences": 3
+  },
+  {
+    "id": "82",
+    "name": "Inébranlable",
+    "pack": "Boîte de base",
+    "class": "Protection",
+    "type": "Amélioration",
+    "cost": 1,
+    "resources": ["energy"],
+    "traits": ["Condition"],
+    "ability": [
+      "**Réponse** : après que votre héros a défendu, défaussez Inébranlable → redressez votre héros."
+    ],
+    "flavorText": "\"Nous n'avons pas le choix. Nous devons nous battre; et gagner. Il n'y a pas d'autre alternative.\" — Captain America",
+    "occurences": 3
+  }
+]

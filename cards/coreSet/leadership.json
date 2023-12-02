@@ -1,0 +1,163 @@
+[
+  {
+    "id": "66",
+    "name": "Hawkeye",
+    "subName": "Clint Barton",
+    "pack": "Boîte de base",
+    "class": "Commandement",
+    "type": "Allié",
+    "unique": true,
+    "cost": 3,
+    "resources": ["energy"],
+    "thwart": {
+      "value": 1,
+      "consequentialDamages": 1
+    },
+    "atk": {
+      "value": 1,
+      "consequentialDamages": 1
+    },
+    "hitPoints": 3,
+    "traits": ["Avenger"],
+    "ability": [
+      "Hawkeye entre en jeu avec 4 jetons Flèche sur lui",
+      "**Réponse** : après qu'un sbire est entré en jeu, retirez 1 jeton Flèche de Hawkeye → infligez 2 dégâts à ce sbire."
+    ],
+    "occurences": 1
+  },
+  {
+    "id": "67",
+    "name": "Maria Hill",
+    "pack": "Boîte de base",
+    "class": "Commandement",
+    "type": "Allié",
+    "unique": true,
+    "cost": 2,
+    "resources": ["mental"],
+    "thwart": {
+      "value": 2,
+      "consequentialDamages": 1
+    },
+    "atk": {
+      "value": 1,
+      "consequentialDamages": 1
+    },
+    "hitPoints": 2,
+    "traits": ["S.H.I.E.L.D"],
+    "ability": [
+      "**Réponse** : après que Maria Hill est entrée en jeu, chaque joueur pioche 1 carte."
+    ],
+    "flavorText": "Croyez-le ou non, vous et moi voulons la même chose.",
+    "occurences": 1
+  },
+  {
+    "id": "68",
+    "name": "Vision",
+    "pack": "Boîte de base",
+    "class": "Commandement",
+    "type": "Allié",
+    "unique": true,
+    "cost": 4,
+    "resources": ["physical"],
+    "thwart": {
+      "value": 1,
+      "consequentialDamages": 1
+    },
+    "atk": {
+      "value": 2,
+      "consequentialDamages": 1
+    },
+    "hitPoints": 3,
+    "traits": ["Androïde", "Avenger"],
+    "ability": [
+      "**Action** : dépensez une ressource {energy} → choisissez CTR ou ATQ. Jusqu'à la fin de la phase, Vision gagne +2 au pouvoir choisi. (Limite d'une fois par round.)"
+    ],
+    "flavorText": "Je vais m'en occuper.",
+    "occurences": 1
+  },
+  {
+    "id": "69",
+    "name": "Se Préparer",
+    "pack": "Boîte de base",
+    "class": "Commandement",
+    "type": "Événement",
+    "cost": 0,
+    "resources": ["physical"],
+    "ability": ["**Action** : redressez un allié."],
+    "flavorText": "\"Nous nous entraînons durement chaque jour pour être prêts quand le moment viendra.\" — Steve Rogers",
+    "occurences": 3
+  },
+  {
+    "id": "70",
+    "name": "Commander en Première Ligne",
+    "pack": "Boîte de base",
+    "class": "Commandement",
+    "type": "Événement",
+    "cost": 2,
+    "resources": ["energy"],
+    "traits": ["Tactique"],
+    "ability": [
+      "**Action de héros** : choisissez un joueur. Chaque personnage contrôlé par ce joueur gagne +1 CTR et +1 ATQ jusqu'à la fin de la phase."
+    ],
+    "flavorText": "\"Allons-y, tout le monde !\" — Carol Danvers",
+    "occurences": 3
+  },
+  {
+    "id": "71",
+    "name": "Appel de détresse",
+    "pack": "Boîte de base",
+    "class": "Commandement",
+    "type": "Événement",
+    "cost": 0,
+    "resources": ["mental"],
+    "ability": [
+      "**Action** : payez le coût imprimé d'un allié qui se trouve dans la pile de défausse de n'importe quel joueur → mettez en jeu cet allié sous votre contrôle."
+    ],
+    "flavorText": "\"Code rouge ! Tout le monde sur le pont !\" — Maria Hill",
+    "occurences": 3
+  },
+  {
+    "id": "72",
+    "name": "Le pouvoir du Commandement",
+    "pack": "Boîte de base",
+    "class": "Commandement",
+    "type": "Ressource",
+    "resources": ["wild"],
+    "ability": [
+      "2 max par deck.",
+      "Doublez le nombre de ressources générées par cette carte lorsque vous payez une carte Commandement (bleue)."
+    ],
+    "occurences": 2
+  },
+  {
+    "id": "73",
+    "name": "Le Triskelion",
+    "pack": "Boîte de base",
+    "class": "Commandement",
+    "type": "Soutien",
+    "cost": 1,
+    "resources": ["energy"],
+    "traits": ["Lieu", "S.H.I.E.L.D"],
+    "ability": [
+      "Augmentez de 1 votre limite d'alliés. (Cela vous permet de contrôler plus de 3 alliés.)"
+    ],
+    "flavorText": "\"Vous pensez qu'ils l'ont fait assez grand ?\" — Miss Hulk",
+    "occurences": 1
+  },
+  {
+    "id": "74",
+    "name": "Motivé",
+    "pack": "Boîte de base",
+    "class": "Commandement",
+    "type": "Amélioration",
+    "cost": 1,
+    "resources": ["physical"],
+    "traits": ["Condition"],
+    "ability": [
+      "Attachez cette carte à un allié.",
+      "L'allié gagne +1 CTR et +1 ATQ."
+    ],
+    "flavorText": "\"Je suis content qu'elle soit de notre côté.\" — Star-Lord",
+    "occurences": 3
+  }
+]

@@ -1,0 +1,142 @@
+[
+  {
+    "id": "50",
+    "name": "Hulk",
+    "subName": "Bruce Banner",
+    "pack": "Boîte de base",
+    "class": "Agressivité",
+    "type": "Allié",
+    "unique": true,
+    "cost": 2,
+    "resources": ["energy"],
+    "atk": {
+      "value": 3,
+      "consequentialDamages": 1
+    },
+    "hitPoints": 5,
+    "traits": ["Avenger", "Gamma"],
+    "ability": [
+      "**Réponse forcée** : après que Hulk a attaqué, défaussez la carte du dessus de votre deck. Si cette carte a comme ressource imprimée :",
+      "{physical} : infligez 2 dégâts à un ennemi.",
+      "{energy} : infligez 1 dégât à chaque personnage.",
+      "{mental} : Défaussez Hulk.",
+      "{wild} : Effectuez toutes les options ci-dessus."
+    ],
+    "occurences": 1
+  },
+  {
+    "id": "51",
+    "name": "Tigra",
+    "subName": "Greer Grant Nelson",
+    "pack": "Boîte de base",
+    "class": "Agressivité",
+    "type": "Allié",
+    "unique": true,
+    "cost": 3,
+    "resources": ["mental"],
+    "thwart": {
+      "value": 1,
+      "consequentialDamages": 1
+    },
+    "atk": {
+      "value": 2,
+      "consequentialDamages": 1
+    },
+    "hitPoints": 3,
+    "traits": ["Avenger"],
+    "ability": [
+      "**Réponse** : après que Tigra a attaqué et vaincu un sbire, soignez-la de 1 dégât."
+    ],
+    "flavorText": "Désolée, pas d'autographe",
+    "occurences": 1
+  },
+  {
+    "id": "52",
+    "name": "Poursuivons-Les",
+    "pack": "Boîte de base",
+    "class": "Agressivité",
+    "type": "Événement",
+    "cost": 0,
+    "traits": ["Contre"],
+    "resources": ["mental"],
+    "ability": [
+      "**Réponse** (contre) : après que votre héros a attaqué et vaincu un ennemi, retirez 2 menaces d'une manigance."
+    ],
+    "flavorText": "\"Kamala, on n'a pas d'hymne officiel. Arrête d'en fredonner un...\" — Captain Marvel",
+    "occurences": 3
+  },
+  {
+    "id": "53",
+    "name": "Assaut Implacable",
+    "pack": "Boîte de base",
+    "class": "Agressivité",
+    "type": "Événement",
+    "cost": 2,
+    "traits": ["Attaque"],
+    "resources": ["energy"],
+    "ability": [
+      "**Action de héros** (attaque) : infligez 5 dégâts à un sbire. Si vous avez utilisé une ressource {physical} pour payer cette carte, cette attaque gagne Déferlement. (Les dégâts excédentaires de cette attaque sont infligés au méchant.)"
+    ],
+    "occurences": 3
+  },
+  {
+    "id": "54",
+    "name": "Uppercut",
+    "pack": "Boîte de base",
+    "class": "Agressivité",
+    "type": "Événement",
+    "cost": 3,
+    "traits": ["Attaque"],
+    "resources": ["physical"],
+    "ability": [
+      "**Action de héros** (attaque) : infligez 5 dégâts à un ennemi"
+    ],
+    "flavorText": "BAM !",
+    "occurences": 3
+  },
+  {
+    "id": "55",
+    "name": "Le Pouvoir de l'Agressivité",
+    "pack": "Boîte de base",
+    "class": "Agressivité",
+    "type": "Ressource",
+    "resources": ["wild"],
+    "ability": [
+      "2 max par deck.",
+      "Doublez le nombre de ressources générées par cette carte lorsque vous payez une carte Agressivité (rouge)."
+    ],
+    "occurences": 2
+  },
+  {
+    "id": "56",
+    "name": "Équipe Tactique",
+    "pack": "Boîte de base",
+    "class": "Agressivité",
+    "type": "Soutien",
+    "cost": 3,
+    "traits": ["S.H.I.E.L.D"],
+    "resources": ["energy"],
+    "ability": [
+      "Utilisations (3 jetons Attaque). (Entre en jeu avec 3 jetons. Quand il n'y en a plus, défaussez cette carte.)",
+      "**Action** : retirez 1 jeton Attaque de l'Équipe Tactique et inclinez-la → infligez 2 dégâts à un ennemi."
+    ],
+    "occurences": 3
+  },
+  {
+    "id": "57",
+    "name": "Entraînement au Combat",
+    "pack": "Boîte de base",
+    "class": "Agressivité",
+    "type": "Amélioration",
+    "cost": 2,
+    "traits": ["Compétence"],
+    "resources": ["physical"],
+    "ability": [
+      "Jouez cette carte sous le contrôle de n'importe quel joueur.",
+      "1 max par joueur.",
+      "Votre héros gagne +1 ATQ"
+    ],
+    "flavorText": "\"Tony ! Elle a recommencé !\" — Janet Van Dyne",
+    "occurences": 3
+  }
+]

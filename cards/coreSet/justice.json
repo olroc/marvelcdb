@@ -1,0 +1,139 @@
+[
+  {
+    "id": "58",
+    "name": "Daredevil",
+    "subName": "Matt Murdock",
+    "pack": "Boîte de base",
+    "class": "Justice",
+    "type": "Allié",
+    "unique": true,
+    "cost": 4,
+    "resources": ["physical"],
+    "thwart": {
+      "value": 2,
+      "consequentialDamages": 1
+    },
+    "atk": {
+      "value": 2,
+      "consequentialDamages": 1
+    },
+    "hitPoints": 3,
+    "traits": ["Defender"],
+    "ability": [
+      "**Réponse** : Après que Daredevil a contré, infligez 1 dégât à un ennemi."
+    ],
+    "flavorText": "J'ai parfois l'impression d'accomplir plus de choses avec mes poings qu'avec mon cabinet d'avocats.",
+    "occurences": 1
+  },
+  {
+    "id": "59",
+    "name": "Jessica Jones",
+    "pack": "Boîte de base",
+    "class": "Justice",
+    "type": "Allié",
+    "unique": true,
+    "cost": 3,
+    "resources": ["energy"],
+    "thwart": {
+      "value": 1,
+      "consequentialDamages": 1
+    },
+    "atk": {
+      "value": 2,
+      "consequentialDamages": 1
+    },
+    "hitPoints": 3,
+    "traits": ["Defender"],
+    "ability": [
+      "Jessica Jones gagne +1 CTR pour chaque manigance annexe en jeu."
+    ],
+    "flavorText": "Je suis vraiment douée pour retrouver les gens.",
+    "occurences": 1
+  },
+  {
+    "id": "60",
+    "name": "Pour la Justice !",
+    "pack": "Boîte de base",
+    "class": "Justice",
+    "type": "Événement",
+    "cost": 2,
+    "traits": ["Contre"],
+    "resources": ["energy"],
+    "ability": [
+      "**Action de héros** (contre) : retirez 3 menaces d'une manigance (4 menaces à la place si vous avez utilisé une ressource {mental} pour payer cette carte)."
+    ],
+    "flavorText": "\"Vous avez perdu. Et vous allez devoir répondre de vos actes.\" — Captain America",
+    "occurences": 3
+  },
+  {
+    "id": "61",
+    "name": "De Grandes Responsabilités",
+    "pack": "Boîte de base",
+    "class": "Justice",
+    "type": "Événement",
+    "cost": 0,
+    "resources": ["mental"],
+    "ability": [
+      "**Interruption de héros** : quand n'importe quelle quantité de menaces est censée être placée sur une manigance, vous subissez une quantité égale de dégâts à la place."
+    ],
+    "occurences": 3
+  },
+  {
+    "id": "62",
+    "name": "Le pouvoir de la Justice",
+    "pack": "Boîte de base",
+    "class": "Justice",
+    "type": "Ressource",
+    "resources": ["wild"],
+    "ability": [
+      "2 max par deck.",
+      "Doublez le nombre de ressources générées par cette carte lorsque vous payez une carte Justice (jaune)."
+    ],
+    "occurences": 2
+  },
+  {
+    "id": "63",
+    "name": "Salle d'Interrogatoire",
+    "pack": "Boîte de base",
+    "class": "Justice",
+    "type": "Soutien",
+    "cost": 1,
+    "resources": ["energy"],
+    "ability": [
+      "1 max par joueur.",
+      "**Réponse** : après que vous avez vaincu un sbire, inclinez la Salle d'Interrogatoire → retirez 1 menace d'une manigance."
+    ],
+    "flavorText": "\"Oh, elle est désolée ! Attendez, je vais chercher les clés et je vous appelle un taxi.\" — Misty Knight",
+    "occurences": 3
+  },
+  {
+    "id": "64",
+    "name": "Équipe de Surveillance",
+    "pack": "Boîte de base",
+    "class": "Justice",
+    "type": "Soutien",
+    "cost": 2,
+    "resources": ["mental"],
+    "ability": [
+      "Utilisations (3 jetons Mouchard). (Entre en jeu avec 3 jetons. Quand il n'y en a plus, défaussez cette carte.)",
+      "**Action** : retirez 1 jeton Mouchard de l'Équipe de Surveillance et inclinez-la → retirez 1 menace d'une manigance."
+    ],
+    "occurences": 3
+  },
+  {
+    "id": "65",
+    "name": "Instinct Héroïque",
+    "pack": "Boîte de base",
+    "class": "Justice",
+    "type": "Amélioration",
+    "cost": 2,
+    "resources": ["energy"],
+    "traits": ["Compétence"],
+    "ability": [
+      "Jouez cette carte sous le contrôle de n'importe quel joueur.",
+      "1 max par joueur.",
+      "Votre héros gagne +1 CTR."
+    ],
+    "occurences": 3
+  }
+]

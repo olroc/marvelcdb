@@ -1,0 +1,169 @@
+[
+  {
+    "id": "83",
+    "name": "Mockingbird",
+    "pack": "Boîte de base",
+    "subName": "Bobbi Morse",
+    "class": "Basique",
+    "type": "Allié",
+    "unique": true,
+    "cost": 3,
+    "resources": ["physical"],
+    "thwart": {
+      "value": 1,
+      "consequentialDamages": 1
+    },
+    "atk": {
+      "value": 1,
+      "consequentialDamages": 1
+    },
+    "hitPoints": 3,
+    "traits": ["S.H.I.E.L.D", "Espion"],
+    "ability": [
+      "**Réponse** : après que Mockingbird est entrée en jeu, sonnez un ennemi."
+    ],
+    "flavorText": "Vous appelez ça de la science !?",
+    "occurences": 4
+  },
+  {
+    "id": "84",
+    "name": "Nick Fury",
+    "pack": "Boîte de base",
+    "class": "Basique",
+    "type": "Allié",
+    "unique": true,
+    "cost": 4,
+    "resources": ["mental"],
+    "thwart": {
+      "value": 2,
+      "consequentialDamages": 1
+    },
+    "atk": {
+      "value": 2,
+      "consequentialDamages": 1
+    },
+    "hitPoints": 3,
+    "traits": ["S.H.I.E.L.D", "Espion"],
+    "ability": [
+      "**Réponse forcée** : après que Nick Fury est entré en jeu, choisissez une option : retirez 2 menaces d'une manigance; piochez 3 cartes ou infligez 4 dégâts à un ennemi. À la fin du round, si Nick Fury est toujours en jeu, défaussez-le."
+    ],
+    "occurences": 4
+  },
+  {
+    "id": "85",
+    "name": "Urgence",
+    "pack": "Boîte de base",
+    "class": "Basique",
+    "type": "Événement",
+    "cost": 0,
+    "traits": ["Contre"],
+    "resources": ["energy"],
+    "ability": [
+      "**Interruption** (contre) : quand le méchant manigance, diminuez de 1 la quantité de menaces placées sur la manigance."
+    ],
+    "flavorText": "APPEL À TOUTES LES UNITÉS ! APPEL À TOUTES LES UNITÉS !",
+    "occurences": 4
+  },
+  {
+    "id": "86",
+    "name": "Premiers Soins",
+    "pack": "Boîte de base",
+    "class": "Basique",
+    "type": "Événement",
+    "cost": 1,
+    "resources": ["mental"],
+    "ability": ["**Action** : soignez 2 dégâts de n'importe quel personnage."],
+    "flavorText": "\"Est-ce qu'on peut toujours appeler ça des premiers soins quand c'est votre deuxième jour à l'hôpital ?\" — Clint Barton",
+    "occurences": 4
+  },
+  {
+    "id": "87",
+    "name": "Haymaker",
+    "pack": "Boîte de base",
+    "class": "Basique",
+    "type": "Événement",
+    "cost": 2,
+    "resources": ["energy"],
+    "ability": [
+      "**Action de héros** (attaque) : infligez 3 dégâts à un ennemi."
+    ],
+    "flavorText": "BAM !",
+    "occurences": 4
+  },
+  {
+    "id": "88",
+    "name": "Energy",
+    "pack": "Boîte de base",
+    "class": "Basique",
+    "type": "Ressource",
+    "resources": ["energy", "energy"],
+    "ability": ["1 max par deck."],
+    "occurences": 4
+  },
+  {
+    "id": "89",
+    "name": "Génie",
+    "pack": "Boîte de base",
+    "class": "Basique",
+    "type": "Ressource",
+    "resources": ["mental", "mental"],
+    "ability": ["1 max par deck."],
+    "occurences": 4
+  },
+  {
+    "id": "90",
+    "name": "Force",
+    "pack": "Boîte de base",
+    "class": "Basique",
+    "type": "Ressource",
+    "resources": ["physical", "physical"],
+    "ability": ["1 max par deck."],
+    "occurences": 4
+  },
+  {
+    "id": "91",
+    "name": "Manoir des Avengers",
+    "pack": "Boîte de base",
+    "class": "Basique",
+    "type": "Soutien",
+    "cost": 4,
+    "traits": ["Avenger", "Lieu"],
+    "resources": ["mental"],
+    "ability": [
+      "1 max par joueur.",
+      "**Action** : inclinez le Manoir des Avengers → choisissez un joueur. Ce joueur pioche 1 carte."
+    ],
+    "flavorText": "\"Tu n'as pas oublié d'éteindre le four ?\" — Janet Van Dyne",
+    "occurences": 4
+  },
+  {
+    "id": "92",
+    "name": "Héliporteur",
+    "pack": "Boîte de base",
+    "class": "Basique",
+    "type": "Soutien",
+    "cost": 3,
+    "traits": ["Lieu", "S.H.I.E.L.D"],
+    "resources": ["physical"],
+    "ability": [
+      "1 max par joueur.",
+      "**Action** : inclinez l'Héliporteur → choisissez un joueur. Réduisez de 1 le coût en ressources de la prochaine carte jouée par ce joueur à cette phase."
+    ],
+    "flavorText": "\"Un porte-avion volant ? Vous plaisantez n'est-ce pas ?\" — Jennifer Walters",
+    "occurences": 4
+  },
+  {
+    "id": "93",
+    "name": "Persévérance",
+    "pack": "Boîte de base",
+    "class": "Basique",
+    "type": "Amélioration",
+    "cost": 2,
+    "traits": ["Condition"],
+    "resources": ["energy"],
+    "ability": [
+      "**Action de héros** : dépensez une ressource {physical} et défaussez cette carte → redressez votre héros."
+    ],
+    "occurences": 4
+  }
+]
