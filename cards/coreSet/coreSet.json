@@ -16,7 +16,8 @@
     ],
     "flavorText": "Je suis juste l'araignée sympa du quartier !",
     "handSize": 5,
-    "hitPoints": 10
+    "hitPoints": 10,
+    "occurences": 1
   },
   {
     "id": "1B",
@@ -33,7 +34,8 @@
     ],
     "flavorText": "Là, tout de suite, j'échangerais bien tous mes pouvoirs de Spider-Man contre un bon livre et un fauteuil à bascule.",
     "handSize": 6,
-    "hitPoints": 10
+    "hitPoints": 10,
+    "occurences": 1
   },
   {
     "id": "2",
@@ -59,7 +61,8 @@
     "ability": [
       "**Réponse forcée** : après que vous avez joué Black Cat, défaussez les 2 cartes du dessus de votre deck. Ajoutez à votre main chaque carte avec une ressource {mental} imprimée défaussée par cet effet."
     ],
-    "flavorText": "Je ne suis pas une héroïne. Je suis une voleuse."
+    "flavorText": "Je ne suis pas une héroïne. Je suis une voleuse.",
+    "occurences": 1
   },
   {
     "id": "3",
@@ -74,7 +77,8 @@
     "ability": [
       "**Interruption** (défense) : quand vous êtes censé subir n'importe quelle quantité de dégâts d'une attaque, prévenez tous ces dégâts."
     ],
-    "flavorText": "\"Tu t'es entraîné ? Parce que tu as failli me toucher.\" — Spider-Man"
+    "flavorText": "\"Tu t'es entraîné ? Parce que tu as failli me toucher.\" — Spider-Man",
+    "occurences": 1
   },
   {
     "id": "3",
@@ -89,7 +93,8 @@
     "ability": [
       "**Interruption** (défense) : quand vous êtes censé subir n'importe quelle quantité de dégâts d'une attaque, prévenez tous ces dégâts."
     ],
-    "flavorText": "\"Tu t'es entraîné ? Parce que tu as failli me toucher.\" — Spider-Man"
+    "flavorText": "\"Tu t'es entraîné ? Parce que tu as failli me toucher.\" — Spider-Man",
+    "occurences": 1
   },
   {
     "id": "4",
@@ -104,7 +109,8 @@
     "ability": [
       "**Interruption de héros** : quand une carte Traîtrise est révélée du deck Rencontre, annulez ses effets \" Une fois révélée \"."
     ],
-    "flavorText": "\"Mes sens d'araignée sont en alerte !\" — Spider-Man"
+    "flavorText": "\"Mes sens d'araignée sont en alerte !\" — Spider-Man",
+    "occurences": 1
   },
   {
     "id": "4",
@@ -119,7 +125,8 @@
     "ability": [
       "**Interruption de héros** : quand une carte Traîtrise est révélée du deck Rencontre, annulez ses effets \" Une fois révélée \"."
     ],
-    "flavorText": "\"Mes sens d'araignée sont en alerte !\" — Spider-Man"
+    "flavorText": "\"Mes sens d'araignée sont en alerte !\" — Spider-Man",
+    "occurences": 1
   },
   {
     "id": "5",
@@ -134,7 +141,8 @@
     "ability": [
       "**Action de héros** (attaque) : infligez 8 dégâts à un ennemi."
     ],
-    "flavorText": "\"Taïaut !\" — Spider-Man"
+    "flavorText": "\"Taïaut !\" — Spider-Man",
+    "occurences": 1
   },
   {
     "id": "5",
@@ -149,7 +157,8 @@
     "ability": [
       "**Action de héros** (attaque) : infligez 8 dégâts à un ennemi."
     ],
-    "flavorText": "\"Taïaut !\" — Spider-Man"
+    "flavorText": "\"Taïaut !\" — Spider-Man",
+    "occurences": 1
   },
   {
     "id": "5",
@@ -164,7 +173,8 @@
     "ability": [
       "**Action de héros** (attaque) : infligez 8 dégâts à un ennemi."
     ],
-    "flavorText": "\"Taïaut !\" — Spider-Man"
+    "flavorText": "\"Taïaut !\" — Spider-Man",
+    "occurences": 1
   },
   {
     "id": "6",
@@ -179,7 +189,8 @@
     "ability": [
       "**Action d'alter ego** : inclinez Tante May → soignez 4 dégâts de Peter Parker."
     ],
-    "flavorText": "Bonté divine, Peter ! Tu es si maladroit depuis quelques temps."
+    "flavorText": "Bonté divine, Peter ! Tu es si maladroit depuis quelques temps.",
+    "occurences": 1
   },
   {
     "id": "7",
@@ -194,97 +205,88 @@
     "ability": [
       "Attachez cette carte à un sbire.",
       "**Interruption forcée** : quand le sbire attaché est vaincu, retirez 3 menaces d'une manigance."
-    ]
-  },
-  {
-    "id": "7",
-    "name": "Spider-Traceur",
-    "signature": "Spider-Man",
-    "pack": "Boîte de base",
-    "class": "Signature",
-    "type": "Amélioration",
-    "cost": 1,
-    "traits": ["Objet", "Tech"],
-    "resources": ["energy"],
-    "ability": [
-      "Attachez cette carte à un sbire.",
-      "**Interruption forcée** : quand le sbire attaché est vaincu, retirez 3 menaces d'une manigance."
-    ]
-  },
-  {
-    "id": "8",
-    "name": "Lance-Toile",
-    "signature": "Spider-Man",
-    "pack": "Boîte de base",
-    "class": "Signature",
-    "type": "Amélioration",
-    "cost": 1,
-    "traits": ["Objet", "Tech"],
-    "resources": ["physical"],
-    "ability": [
-      "Utilisations (3 jetons Toile). (Entre en jeu avec 3 jetons. Quand il n'y en a plus, défaussez cette carte.)",
-      "**Ressource de héros** : retirez 1 jeton Toile du Lance-Toile et inclinez-le → générez une ressource {wild}."
-    ]
-  },
-  {
-    "id": "8",
-    "name": "Lance-Toile",
-    "signature": "Spider-Man",
-    "pack": "Boîte de base",
-    "class": "Signature",
-    "type": "Amélioration",
-    "cost": 1,
-    "traits": ["Objet", "Tech"],
-    "resources": ["physical"],
-    "ability": [
-      "Utilisations (3 jetons Toile). (Entre en jeu avec 3 jetons. Quand il n'y en a plus, défaussez cette carte.)",
-      "**Ressource de héros** : retirez 1 jeton Toile du Lance-Toile et inclinez-le → générez une ressource {wild}."
-    ]
-  },
-  {
-    "id": "9",
-    "name": "Pris dans la Toile",
-    "signature": "Spider-Man",
-    "pack": "Boîte de base",
-    "class": "Signature",
-    "type": "Amélioration",
-    "cost": 4,
-    "traits": ["Condition"],
-    "resources": ["physical"],
-    "ability": [
-      "Sous forme de Héros uniquement. Attachez cette carte à un ennemi. 1 max par ennemi.",
-      "**Interruption forcée** : quand l'ennemi attaché est censé attaquer, défaussez Pris dans la Toile à la place. Ensuite, sonnez cet ennemi."
-    ]
-  },
-  {
-    "id": "9",
-    "name": "Pris dans la Toile",
-    "signature": "Spider-Man",
-    "pack": "Boîte de base",
-    "class": "Signature",
-    "type": "Amélioration",
-    "cost": 4,
-    "traits": ["Condition"],
-    "resources": ["physical"],
-    "ability": [
-      "Sous forme de Héros uniquement. Attachez cette carte à un ennemi. 1 max par ennemi.",
-      "**Interruption forcée** : quand l'ennemi attaché est censé attaquer, défaussez Pris dans la Toile à la place. Ensuite, sonnez cet ennemi."
-    ]
-  },
-  {
-    "id": "165",
-    "name": "Avis d'Expulsion",
-    "signature": "Spider-Man",
-    "pack": "Boîte de base",
-    "class": "Rencontre",
-    "type": "Obligation",
-    "ability": [
-      "**Donnez cette carte au joueur de Peter Parker.**",
-      "Vous pouvez passer sous forme d'alter ego. Choisissez :",
-      "- Inclinez Peter Parker → retirez l'Avis d'Expulsion de la partie.",
-      "- Défaussez 1 carte prise au hasard dans votre main. Cette obligation gagne Renfort. Défaussez cette obligation."
     ],
-    "boost": 2
+    "occurences": 1
+  },
+  {
+    "id": "7",
+    "name": "Spider-Traceur",
+    "signature": "Spider-Man",
+    "pack": "Boîte de base",
+    "class": "Signature",
+    "type": "Amélioration",
+    "cost": 1,
+    "traits": ["Objet", "Tech"],
+    "resources": ["energy"],
+    "ability": [
+      "Attachez cette carte à un sbire.",
+      "**Interruption forcée** : quand le sbire attaché est vaincu, retirez 3 menaces d'une manigance."
+    ],
+    "occurences": 1
+  },
+  {
+    "id": "8",
+    "name": "Lance-Toile",
+    "signature": "Spider-Man",
+    "pack": "Boîte de base",
+    "class": "Signature",
+    "type": "Amélioration",
+    "cost": 1,
+    "traits": ["Objet", "Tech"],
+    "resources": ["physical"],
+    "ability": [
+      "Utilisations (3 jetons Toile). (Entre en jeu avec 3 jetons. Quand il n'y en a plus, défaussez cette carte.)",
+      "**Ressource de héros** : retirez 1 jeton Toile du Lance-Toile et inclinez-le → générez une ressource {wild}."
+    ],
+    "occurences": 1
+  },
+  {
+    "id": "8",
+    "name": "Lance-Toile",
+    "signature": "Spider-Man",
+    "pack": "Boîte de base",
+    "class": "Signature",
+    "type": "Amélioration",
+    "cost": 1,
+    "traits": ["Objet", "Tech"],
+    "resources": ["physical"],
+    "ability": [
+      "Utilisations (3 jetons Toile). (Entre en jeu avec 3 jetons. Quand il n'y en a plus, défaussez cette carte.)",
+      "**Ressource de héros** : retirez 1 jeton Toile du Lance-Toile et inclinez-le → générez une ressource {wild}."
+    ],
+    "occurences": 1
+  },
+  {
+    "id": "9",
+    "name": "Pris dans la Toile",
+    "signature": "Spider-Man",
+    "pack": "Boîte de base",
+    "class": "Signature",
+    "type": "Amélioration",
+    "cost": 4,
+    "traits": ["Condition"],
+    "resources": ["physical"],
+    "ability": [
+      "Sous forme de Héros uniquement. Attachez cette carte à un ennemi. 1 max par ennemi.",
+      "**Interruption forcée** : quand l'ennemi attaché est censé attaquer, défaussez Pris dans la Toile à la place. Ensuite, sonnez cet ennemi."
+    ],
+    "occurences": 1
+  },
+  {
+    "id": "9",
+    "name": "Pris dans la Toile",
+    "signature": "Spider-Man",
+    "pack": "Boîte de base",
+    "class": "Signature",
+    "type": "Amélioration",
+    "cost": 4,
+    "traits": ["Condition"],
+    "resources": ["physical"],
+    "ability": [
+      "Sous forme de Héros uniquement. Attachez cette carte à un ennemi. 1 max par ennemi.",
+      "**Interruption forcée** : quand l'ennemi attaché est censé attaquer, défaussez Pris dans la Toile à la place. Ensuite, sonnez cet ennemi."
+    ],
+    "occurences": 1
   },
   {
     "id": "29A",
@@ -303,7 +305,8 @@
     ],
     "flavorText": "Je suis Iron Man.",
     "handSize": 1,
-    "hitPoints": 9
+    "hitPoints": 9,
+    "occurences": 1
   },
   {
     "id": "29B",
@@ -320,7 +323,8 @@
     ],
     "flavorText": "Je ne fais clairement pas ça pour l'argent...",
     "handSize": 6,
-    "hitPoints": 9
+    "hitPoints": 9,
+    "occurences": 1
   },
   {
     "id": "30",
@@ -346,7 +350,8 @@
     "ability": [
       "**Action** : inclinez War Machine et infligez-lui 2 dégâts → infligez 1 dégât à chaque ennemi."
     ],
-    "flavorText": "C'est une guerre privée ou n'importe qui peut s'inviter ?"
+    "flavorText": "C'est une guerre privée ou n'importe qui peut s'inviter ?",
+    "occurences": 1
   },
   {
     "id": "31",
@@ -360,7 +365,8 @@
     "resources": ["physical"],
     "ability": [
       "**Action de héros** (attaque) : infligez 1 dégât à un ennemi et défaussez les 5 cartes du dessus de votre deck. Pour chaque ressource {energy} imprimée défaussée par cet effet, infligez 2 dégâts supplémentaires à cet ennemi."
-    ]
+    ],
+    "occurences": 1
   },
   {
     "id": "31",
@@ -374,7 +380,8 @@
     "resources": ["physical"],
     "ability": [
       "**Action de héros** (attaque) : infligez 1 dégât à un ennemi et défaussez les 5 cartes du dessus de votre deck. Pour chaque ressource {energy} imprimée défaussée par cet effet, infligez 2 dégâts supplémentaires à cet ennemi."
-    ]
+    ],
+    "occurences": 1
   },
   {
     "id": "31",
@@ -388,7 +395,8 @@
     "resources": ["physical"],
     "ability": [
       "**Action de héros** (attaque) : infligez 1 dégât à un ennemi et défaussez les 5 cartes du dessus de votre deck. Pour chaque ressource {energy} imprimée défaussée par cet effet, infligez 2 dégâts supplémentaires à cet ennemi."
-    ]
+    ],
+    "occurences": 1
   },
   {
     "id": "32",
@@ -403,7 +411,8 @@
     "ability": [
       "**Action de héros** (attaque) : infligez 4 dégâts à un ennemi (8 dégâts à la place si vous avez le trait **Aérien**)."
     ],
-    "flavorText": "\"Jolie technique. Mais si vous l'utilisez comme ceci... ça fait encore plus mal.\" — Tony Stark"
+    "flavorText": "\"Jolie technique. Mais si vous l'utilisez comme ceci... ça fait encore plus mal.\" — Tony Stark",
+    "occurences": 1
   },
   {
     "id": "32",
@@ -418,7 +427,8 @@
     "ability": [
       "**Action de héros** (attaque) : infligez 4 dégâts à un ennemi (8 dégâts à la place si vous avez le trait **Aérien**)."
     ],
-    "flavorText": "\"Jolie technique. Mais si vous l'utilisez comme ceci... ça fait encore plus mal.\" — Tony Stark"
+    "flavorText": "\"Jolie technique. Mais si vous l'utilisez comme ceci... ça fait encore plus mal.\" — Tony Stark",
+    "occurences": 1
   },
   {
     "id": "33",
@@ -433,7 +443,8 @@
     "ability": [
       "**Ressource** : inclinez Pepper Potts → générez les ressources de la carte du dessus de votre pile de défausse."
     ],
-    "flavorText": "Vaque à tes occupations. Je m'occupe du reste"
+    "flavorText": "Vaque à tes occupations. Je m'occupe du reste",
+    "occurences": 1
   },
   {
     "id": "34",
@@ -448,7 +459,8 @@
     "ability": [
       "**Action d'alter ego** : inclinez la Tour Stark → choisissez un joueur. Ce joueur renvoie dans sa main l'amélioration **TECH** la plus proche du dessus de sa pile de défausse."
     ],
-    "flavorText": "\"J'espérais quelque chose d'un peu plus grand. Mais ça fera l'affaire.\" — Tony Stark"
+    "flavorText": "\"J'espérais quelque chose d'un peu plus grand. Mais ça fera l'affaire.\" — Tony Stark",
+    "occurences": 1
   },
   {
     "id": "35",
@@ -463,7 +475,8 @@
     "ability": [
       "**Action de héros** : inclinez le Réacteur Arc → redressez Iron Man."
     ],
-    "flavorText": "\"Quand je revêts cette armure, je dispose de pouvoir qu'aun humain n'en a jamais rêvé... et peut-être de plus de responsabilités que ce que mon coeur peut endurer.\" — Tony Stark"
+    "flavorText": "\"Quand je revêts cette armure, je dispose de pouvoir qu'aun humain n'en a jamais rêvé... et peut-être de plus de responsabilités que ce que mon coeur peut endurer.\" — Tony Stark",
+    "occurences": 1
   },
   {
     "id": "36",
@@ -476,7 +489,8 @@
     "traits": ["Armure", "Tech"],
     "resources": ["mental"],
     "ability": ["Vous gagnez +6 points de vie."],
-    "flavorText": "\"C'est tout que tu sais faire ?\" — Tony Stark"
+    "flavorText": "\"C'est tout que tu sais faire ?\" — Tony Stark",
+    "occurences": 1
   },
   {
     "id": "37",
@@ -491,7 +505,8 @@
     "ability": [
       "**Action de héros** (contre) : inclinez le Casque Mark V → retirez 1 menace d'une manigance (de chaque manigance à la place si vous avez le trait **Aérien**)."
     ],
-    "flavorText": "\"Tony, êtes-vous sûr de vouloir faire ça ?\" — P.E.P.P.E.R."
+    "flavorText": "\"Tony, êtes-vous sûr de vouloir faire ça ?\" — P.E.P.P.E.R.",
+    "occurences": 1
   },
   {
     "id": "38",
@@ -506,7 +521,8 @@
     "ability": [
       "**Action de héros** (attaque) : inclinez les Gantelets Énergétiques → infligez 1 dégât à un ennemi (2 dégâts à la place si vous avez le trait **Aérien**)."
     ],
-    "flavorText": "\"Laissez-moi vous donner... un coup de main.\" — Tony Stark"
+    "flavorText": "\"Laissez-moi vous donner... un coup de main.\" — Tony Stark",
+    "occurences": 1
   },
   {
     "id": "38",
@@ -521,7 +537,8 @@
     "ability": [
       "**Action de héros** (attaque) : inclinez les Gantelets Énergétiques → infligez 1 dégât à un ennemi (2 dégâts à la place si vous avez le trait **Aérien**)."
     ],
-    "flavorText": "\"Laissez-moi vous donner... un coup de main.\" — Tony Stark"
+    "flavorText": "\"Laissez-moi vous donner... un coup de main.\" — Tony Stark",
+    "occurences": 1
   },
   {
     "id": "39",
@@ -536,36 +553,23 @@
     "ability": [
       "Vous gagnez +1 point de vie.",
       "**Action de héros** : inclinez les Bottes-fusée et dépensez une ressource {mental} → vous gagnez le trait **Aérien** jusqu'à la fin de la phase."
-    ]
-  },
-  {
-    "id": "39",
-    "name": "Bottes-Fusée",
-    "signature": "Iron Man",
-    "pack": "Boîte de base",
-    "class": "Signature",
-    "type": "Amélioration",
-    "cost": 1,
-    "traits": ["Armure", "Tech"],
-    "resources": ["mental"],
-    "ability": [
-      "Vous gagnez +1 point de vie.",
-      "**Action de héros** : inclinez les Bottes-fusée et dépensez une ressource {mental} → vous gagnez le trait **Aérien** jusqu'à la fin de la phase."
-    ]
-  },
-  {
-    "id": "170",
-    "name": "Surmenage",
-    "signature": "Iron Man",
-    "pack": "Boîte de base",
-    "class": "Rencontre",
-    "type": "Obligation",
-    "ability": [
-      "**Donnez cette carte au joueur de Tony Stark.**",
-      "Vous pouvez passer sous forme d'alter ego. Choisissez :",
-      "- Inclinez Tony Stark → retirez Surmenage de la partie.",
-      "- Inclinez chaque amélioration que vous contrôlez. Défaussez cette obligation."
     ],
-    "boost": 2
+    "occurences": 1
+  },
+  {
+    "id": "39",
+    "name": "Bottes-Fusée",
+    "signature": "Iron Man",
+    "pack": "Boîte de base",
+    "class": "Signature",
+    "type": "Amélioration",
+    "cost": 1,
+    "traits": ["Armure", "Tech"],
+    "resources": ["mental"],
+    "ability": [
+      "Vous gagnez +1 point de vie.",
+      "**Action de héros** : inclinez les Bottes-fusée et dépensez une ressource {mental} → vous gagnez le trait **Aérien** jusqu'à la fin de la phase."
+    ],
+    "occurences": 1
   }
 ]
