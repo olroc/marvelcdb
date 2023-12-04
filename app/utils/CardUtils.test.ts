@@ -1,6 +1,12 @@
 import '@testing-library/jest-dom'
 
-import { isEqual, mapJsonToCard, merge } from './CardUtils'
+import {
+  isEqual,
+  mapJsonToCard,
+  merge,
+  filterBySearchQuery,
+  filterByClass,
+} from './CardUtils'
 
 describe('CardUtils', () => {
   describe('isEqual', () => {
@@ -194,6 +200,71 @@ describe('CardUtils', () => {
           },
         ])
       })
+    })
+  })
+
+  describe('filterBySearchQuery', () => {
+    describe('when given a query and a list of cards', () => {
+      const card = {
+        id: '74',
+        name: 'Motivé',
+        packs: ['Boîte de base'],
+        class: 'Commandement',
+        type: 'Amélioration',
+        cost: 1,
+        resources: ['physical'],
+        traits: ['Condition'],
+        ability: [
+          'Attachez cette carte à un allié.',
+          "L'allié gagne +1 CTR et +1 ATQ.",
+        ],
+        flavorText:
+          '"Je suis content qu\'elle soit de notre côté." — Star-Lord',
+        occurences: 3,
+      }
+
+      it('should return true if a card name matches the query', () => {
+        expect(filterBySearchQuery('otiv')(card)).toBe(true)
+      })
+
+      it('should return true if a card ability matches the query', () => {
+        expect(filterBySearchQuery('gagne +1')(card)).toBe(true)
+      })
+
+      it('should return true if a card trait matches the query', () => {
+        expect(filterBySearchQuery('ondit')(card)).toBe(true)
+      })
+
+      it('should return false if the query matches none of these fields', () => {
+        expect(filterBySearchQuery('noMatchQuery')(card)).toBe(false)
+      })
+    })
+  })
+
+  describe('filterByClass', () => {
+    const card = {
+      id: '74',
+      name: 'Motivé',
+      packs: ['Boîte de base'],
+      class: 'Commandement',
+      type: 'Amélioration',
+      cost: 1,
+      resources: ['physical'],
+      traits: ['Condition'],
+      ability: [
+        'Attachez cette carte à un allié.',
+        "L'allié gagne +1 CTR et +1 ATQ.",
+      ],
+      flavorText: '"Je suis content qu\'elle soit de notre côté." — Star-Lord',
+      occurences: 3,
+    }
+
+    it('should return true if the card class equals the given class', () => {
+      expect(filterByClass('Commandement')(card)).toBe(true)
+    })
+
+    it('should return false if the card class does not equal the given class', () => {
+      expect(filterByClass('Basique')(card)).toBe(false)
     })
   })
 })
