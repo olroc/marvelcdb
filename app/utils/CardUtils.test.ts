@@ -235,6 +235,10 @@ describe('CardUtils', () => {
         expect(filterBySearchQuery('ondit')(card)).toBe(true)
       })
 
+      it('should be case insensitive', () => {
+        expect(filterBySearchQuery('OnDiT')(card)).toBe(true)
+      })
+
       it('should return false if the query matches none of these fields', () => {
         expect(filterBySearchQuery('noMatchQuery')(card)).toBe(false)
       })

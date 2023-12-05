@@ -1,8 +1,9 @@
 import any from 'ramda/src/any'
 import anyPass from 'ramda/src/anyPass'
-import includes from 'ramda/src/includes'
 import pipe from 'ramda/src/pipe'
 import equals from 'ramda/src/equals'
+import toLower from 'ramda/src/toLower'
+import includes from 'ramda/src/includes'
 
 export const isEqual = (cardA: CardID) => (cardB: CardID) =>
   cardA.name === cardB.name &&
@@ -38,12 +39,15 @@ export const merge: (cards: Card[]) => (newCards: Card[]) => Card[] =
 
 export const filterBySearchQuery: (
   searchQuery: string
-) => (card: Card) => boolean = searchQuery =>
-  anyPass([
-    pipe(card => card.name, includes(searchQuery)),
-    pipe(card => card.ability, any(includes(searchQuery))),
-    pipe(card => card.traits ?? [], any(includes(searchQuery))),
+) => (card: Card) => boolean = searchQuery => {
+  const testIgnoreCase = pipe(toLower, includes(toLower(searchQuery)))
+
+  return anyPass([
+    pipe(card => card.name, testIgnoreCase),
+    pipe(card => card.ability, any(testIgnoreCase)),
+    pipe(card => card.traits ?? [], any(testIgnoreCase)),
   ])
+}
 
 export const filterByClass: (
   cardClass: string
