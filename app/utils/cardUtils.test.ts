@@ -5,8 +5,8 @@ import {
   mapJsonToCard,
   merge,
   filterBySearchQuery,
-  filterByClass,
-} from './CardUtils'
+  filterByClasses,
+} from './cardUtils'
 
 describe('CardUtils', () => {
   describe('isEqual', () => {
@@ -263,12 +263,16 @@ describe('CardUtils', () => {
       occurences: 3,
     }
 
+    it('should return true if the card class is included in the given classes', () => {
+      expect(filterByClasses(['Commandement', 'Basique'])(card)).toBe(true)
+    })
+
     it('should return true if the card class equals the given class', () => {
-      expect(filterByClass('Commandement')(card)).toBe(true)
+      expect(filterByClasses(['Commandement'])(card)).toBe(true)
     })
 
     it('should return false if the card class does not equal the given class', () => {
-      expect(filterByClass('Basique')(card)).toBe(false)
+      expect(filterByClasses(['Basique'])(card)).toBe(false)
     })
   })
 })

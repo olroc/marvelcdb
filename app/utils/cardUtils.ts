@@ -1,7 +1,6 @@
 import any from 'ramda/src/any'
 import anyPass from 'ramda/src/anyPass'
 import pipe from 'ramda/src/pipe'
-import equals from 'ramda/src/equals'
 import toLower from 'ramda/src/toLower'
 import includes from 'ramda/src/includes'
 
@@ -49,7 +48,10 @@ export const filterBySearchQuery: (
   ])
 }
 
-export const filterByClass: (
-  cardClass: string
-) => (card: Card) => boolean = cardClass =>
-  pipe(card => card.class, equals(cardClass))
+export const filterByClasses: (
+  cardClasses: string[]
+) => (card: Card) => boolean = cardClasses =>
+  pipe(
+    card => card.class,
+    cardClass => includes(cardClass)(cardClasses)
+  )

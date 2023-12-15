@@ -33,4 +33,12 @@ declare global {
   }
 
   type CardID = Pick<Card, name | class | type>
+
+  type Aspect =
+    | 'basic'
+    | 'justice'
+    | 'agression'
+    | 'leadership'
+    | 'protection'
+    | 'pool'
 }

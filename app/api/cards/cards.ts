@@ -1,4 +1,4 @@
-import { merge, mapJsonToCard } from '../../utils/CardUtils'
+import { merge, mapJsonToCard } from '../../utils/cardUtils'
 import pipe from 'ramda/src/pipe'
 
 /* CORE SET */

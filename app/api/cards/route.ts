@@ -2,16 +2,19 @@ import { type NextRequest } from 'next/server'
 import { filter, identity, pipe } from 'ramda'
 
 import { MARVEL_CHAMPIONS_CARDS } from './cards'
-import { filterByClass, filterBySearchQuery } from '../../utils/CardUtils'
+import { filterByClasses, filterBySearchQuery } from '../../utils/cardUtils'
 
 export async function GET(request: NextRequest) {
   const searchParams = request.nextUrl.searchParams
   const query = searchParams.get('query')
-  const classParam = searchParams.get('class')
+  const aspects = searchParams.get('aspects')?.split(',')
+
+  console.log(request.nextUrl.searchParams)
+  console.log(aspects)
 
   const filteredCards = pipe(
     query ? filter(filterBySearchQuery(query)) : identity,
-    classParam ? filter(filterByClass(classParam)) : identity
+    aspects ? filter(filterByClasses(aspects)) : identity
   )(MARVEL_CHAMPIONS_CARDS)
 
   return Response.json(filteredCards)
