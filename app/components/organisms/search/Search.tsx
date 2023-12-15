@@ -1,4 +1,5 @@
 'use client'
+import { useCallback } from 'react'
 import { useRouter, usePathname, useSearchParams } from 'next/navigation'
 
 import SearchInput from './searchInput/SearchInput'
@@ -17,21 +18,24 @@ type SearchProps = {
 export default function Search({ results }: SearchProps) {
   const router = useRouter()
   const path = usePathname()
-  const searchParams = useSearchParams()
 
+  const searchParams = useSearchParams()
   const aspects = searchParams.getAll('aspects')
   const query = searchParams.get('query')
 
-  const onQueryChange = (query: string) => {
-    const params = new URLSearchParams(searchParams)
-    if (query) {
-      params.set('query', query)
-    } else {
-      params.delete('query')
-    }
+  const onQueryChange = useCallback(
+    (query: string) => {
+      const params = new URLSearchParams(searchParams)
+      if (query) {
+        params.set('query', query)
+      } else {
+        params.delete('query')
+      }
 
-    router.replace(buildUrl({ path, searchParams: params }))
-  }
+      router.replace(buildUrl({ path, searchParams: params }))
+    },
+    [path, router, searchParams]
+  )
 
   const onAspectChange = (aspect: Aspect) => {
     const params = new URLSearchParams(searchParams)

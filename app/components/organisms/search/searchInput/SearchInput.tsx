@@ -17,6 +17,8 @@ export default function SearchInput({ query, onChange }: SearchInputProps) {
     setValue(event.target.value)
   }
 
+  console.log(query)
+
   useEffect(() => onChange(debouncedValue ?? ''), [onChange, debouncedValue])
 
   return (
