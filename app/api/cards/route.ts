@@ -9,9 +9,6 @@ export async function GET(request: NextRequest) {
   const query = searchParams.get('query')
   const aspects = searchParams.get('aspects')?.split(',')
 
-  console.log(request.nextUrl.searchParams)
-  console.log(aspects)
-
   const filteredCards = pipe(
     query ? filter(filterBySearchQuery(query)) : identity,
     aspects ? filter(filterByClasses(aspects)) : identity
