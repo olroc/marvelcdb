@@ -7,6 +7,7 @@ import Modal from '../../modal/Modal'
 import useModal from '../../../../hooks/useModal'
 import CardDetails from '../../cardDetails/CardDetails'
 import { getImageUrl } from '../../../../utils/imageUtils'
+import ModalCardDetails from '../../modalCardDetails/ModalCardDetails'
 
 type SearchResultsProps = {
   results: Card[]
@@ -41,15 +42,11 @@ export default function SearchResults({ results }: SearchResultsProps) {
         </button>
       ))}
 
-      <Modal
-        title={activeCard?.name}
-        showModal={isShowing}
+      <ModalCardDetails
+        isShowing={isShowing}
         closeModal={closeModal}
-      >
-        {activeCard ? (
-          <CardDetails id={activeCard.id} name={activeCard.name} />
-        ) : null}
-      </Modal>
+        card={activeCard}
+      />
     </div>
   )
 }

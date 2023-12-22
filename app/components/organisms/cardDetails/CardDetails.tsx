@@ -7,6 +7,7 @@ import has from 'ramda/src/has'
 import { fetchData } from '../../../utils/fetch'
 import { getImageUrl } from '../../../utils/imageUtils'
 import { mapTextToHTML, mapResourceToHTML } from '../../../utils/text-utils'
+import CardDetailsSkeleton from './CardDetails.skeleton'
 
 type CardDetailsProps = {
   id: string
@@ -23,24 +24,7 @@ export default function CardDetails({ id, name }: CardDetailsProps) {
         height={419}
         className="my-6 mx-6"
       />
-      <Suspense
-        fallback={
-          <div role="status" className="max-w-sm animate-pulse">
-            <div className="h-2.5 bg-gray-200 rounded-full dark:bg-gray-700 w-48 mb-4"></div>
-
-            <div className="h-2 bg-gray-200 rounded-full dark:bg-gray-700 max-w-[360px] mb-2.5"></div>
-            <div className="h-2 bg-gray-200 rounded-full dark:bg-gray-700 mb-2.5"></div>
-            <div className="h-2 bg-gray-200 rounded-full dark:bg-gray-700 mb-2.5"></div>
-            <div className="h-2 bg-gray-200 rounded-full dark:bg-gray-700 mb-2.5"></div>
-            <div className="h-2 bg-gray-200 rounded-full dark:bg-gray-700 mb-2.5"></div>
-            <div className="h-2 bg-gray-200 rounded-full dark:bg-gray-700 mb-2.5"></div>
-            <div className="h-2 bg-gray-200 rounded-full dark:bg-gray-700 mb-2.5"></div>
-            <div className="h-2 bg-gray-200 rounded-full dark:bg-gray-700 mb-2.5"></div>
-            <div className="h-2 bg-gray-200 rounded-full dark:bg-gray-700 mb-2.5"></div>
-            <div className="h-2 bg-gray-200 rounded-full dark:bg-gray-700 mb-2.5"></div>
-          </div>
-        }
-      >
+      <Suspense fallback={<CardDetailsSkeleton />}>
         <Details id={id} />
       </Suspense>
     </div>
@@ -73,14 +57,17 @@ function Details({ id }: { id: string }) {
             Coût: <span className="font-bold">{card?.cost}</span>
           </div>
         )}
-        <div>
+        <div className="flex">
           Ressource{length(card?.resources as string[]) > 1 ? 's' : ''}:{' '}
-          <span className="font-bold">
-            {card?.resources
-              ?.map(r => `{${r}}`)
-              .map(mapResourceToHTML)
-              .join(', ')}
-          </span>
+          <span
+            dangerouslySetInnerHTML={{
+              __html:
+                card?.resources
+                  ?.map(r => `{${r}}`)
+                  .map(mapResourceToHTML)
+                  .join('') || '',
+            }}
+          />
         </div>
       </div>
 

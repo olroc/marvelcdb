@@ -4,6 +4,8 @@ declare global {
   type JSONCard = {
     id: string
     name: string
+    subName?: string
+    unique?: boolean
     pack: string
     class: string
     type: string
@@ -19,6 +21,8 @@ declare global {
   type Card = {
     id: string
     name: string
+    subName?: string
+    unique?: boolean
     signature?: string
     packs: string[]
     class: string

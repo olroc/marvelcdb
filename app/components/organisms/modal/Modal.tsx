@@ -1,17 +1,20 @@
 import clsx from 'clsx'
 import useClickOutside from '../../../hooks/useClickOutside'
+import { ReactNode } from 'react'
 
 type ModalProps = {
-  title?: string
   showModal: boolean
   closeModal: () => void
-  children: React.ReactNode
+  className?: string
+  header: ReactNode
+  children: ReactNode
 }
 
 export default function Modal({
-  title,
   showModal,
   closeModal,
+  className,
+  header,
   children,
 }: ModalProps) {
   const ref = useClickOutside(closeModal)
@@ -21,18 +24,26 @@ export default function Modal({
       className={clsx(
         'flex flex-col overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 justify-center items-center w-full md:inset-0 h-full max-h-full bg-black/75',
         'transition-opacity',
-        showModal ? 'opacity-100 z-50' : 'opacity-0 -z-10'
+        showModal
+          ? 'duration-200 opacity-100 z-50'
+          : 'duration-0 opacity-0 -z-10'
       )}
     >
       <div
-        className="relative rounded-lg shadow bg-gray-950 bg-gradient-to-br from-blue-950"
+        className="relative rounded-2xl shadow bg-gray-600 bg-gradient-to-br from-gray-500"
         ref={ref}
       >
-        <div className="flex items-center justify-between p-4 md:p-5 border-b rounded-t">
-          <div className="py-4">{title}</div>
+        <div
+          className={clsx(
+            'flex items-center justify-between p-4 md:p-5 border-b rounded-t-2xl',
+            className
+          )}
+        >
+          <div />
+          {header}
           <button
             type="button"
-            className="hover:bg-gray-200 rounded-lg w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+            className="hover:bg-gray-200 rounded-lg w-8 h-8 inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
             data-modal-hide="default-modal"
             onClick={closeModal}
           >
